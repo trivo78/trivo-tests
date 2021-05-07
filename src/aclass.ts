@@ -12,9 +12,9 @@ export interface autoGun  extends gun {
 
 
 export class miniGun implements autoGun {
-    private __fullAuto : boolean;
-    private __roundCount: number;
-    private __rounds : number;
+    __fullAuto : boolean;
+     __roundCount: number;
+     __rounds : number;
 
     public constructor(nr:number) {
         this.__fullAuto = false;
