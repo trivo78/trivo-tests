@@ -29,12 +29,12 @@ export class miniGun implements autoGun {
     }
 
     public aim() : boolean {
-        console.log("Aiming " + this.__roundCount + " rounds with fullAuto : " + this.__fullAuto);
+        console.log("Aiming " + this.__rounds + " rounds with fullAuto : " + this.__fullAuto);
         return true;
     }
     public shoot() : boolean {
         if (this.__rounds > 0 ) {
-            console.log("Shooting " + this.__roundCount + " rounds with fullAuto : " + this.__fullAuto);
+            console.log("Shooting " + this.__rounds + " rounds with fullAuto : " + this.__fullAuto);
             --this.__rounds;
             return true;
         } else {
