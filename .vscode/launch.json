@@ -1,0 +1,27 @@
+{
+    "configurations": [
+    {
+        "name": "Debug Current File",
+        "program": "${file}",
+        "request": "launch",
+        "skipFiles": [
+            "<node_internals>/**"
+        ],
+        // "preLaunchTask": "npm: build", Se vuoi che lui compili ogni volta che lo esegui
+        "type": "node",
+        "outFiles": ["${workspaceFolder}/build/**/*.js"]
+    },
+    {
+        "name": "Run main",
+        "program": "${workspaceFolder}/src/main.ts",
+        "request": "launch",
+        "skipFiles": [
+            "<node_internals>/**"
+        ],
+        "type": "node",
+        "outFiles": [
+            "${workspaceFolder}/build/**/*.js"
+        ]
+    }
+    ]
+}
