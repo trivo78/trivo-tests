@@ -1,14 +1,11 @@
 import * as hello from "./hello";
-
-
-
-
-//import {autoGun, miniGun } from   "./aclass";
+import {autoGun, miniGun } from   "./aclass";
 
 console.log("BUBU");
 var h = new hello.Hello("a msg");
 hello.hellohello(h);
-/*
+
+
 var ag : autoGun;
 ag = new  miniGun(10);
 
@@ -23,5 +20,5 @@ ag.reload();
 
 ag.aim();
 
-*/
+
 

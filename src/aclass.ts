@@ -27,6 +27,9 @@ export class miniGun implements autoGun {
     public roundCount() : number {
         return this.__roundCount;
     }
+    public rounds() : number {
+        return this.__rounds;
+    }
 
     public aim() : boolean {
         console.log("Aiming " + this.__rounds + " rounds with fullAuto : " + this.__fullAuto);
